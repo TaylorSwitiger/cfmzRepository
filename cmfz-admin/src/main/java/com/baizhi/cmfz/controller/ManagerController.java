@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,14 +30,16 @@ public class ManagerController {
 
     @RequestMapping("/login")
     public String managerLogin(Manager manager,String enCode,boolean check, Model model, HttpServletResponse response,
-                               HttpServletRequest request , HttpSession session){
+                               HttpServletRequest request , HttpSession session) throws UnsupportedEncodingException {
         //System.out.println(manager.getMgrName() + "------" + manager.getMgrPwd() + "----" + check);
 
         /*for (Cookie cookie : request.getCookies()) {
             System.out.println(cookie.getValue());
         }*/
         if (check) {
-            Cookie c1 = new Cookie("mgrName",manager.getMgrName());
+            Cookie c1 = new Cookie("mgrName", URLEncoder.encode(manager.getMgrName(),"utf-8"));
+
+            c1.setPath("/");
             c1.setMaxAge(60 * 60 * 24 * 7);
             response.addCookie(c1);
             System.out.println(c1.getValue());

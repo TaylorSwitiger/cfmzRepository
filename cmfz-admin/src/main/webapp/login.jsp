@@ -34,7 +34,6 @@
 				if ($("#isRememberUsername").prop("checked")) {
 				    value = true ;
 				}
-
                 $("#isRememberUsername").prop("value",value);
 
 			});
@@ -44,7 +43,7 @@
 <body>
 
 		<div class="login">
-			<form id="loginForm" action="/cmfz/admin/mgr/login.do" method="post" >
+			<form id="loginForm" action="/cmfz/admin/mgr/login.do" method="post" accept-charset="utf-8">
 				
 				<table>
 					<tbody>
@@ -56,12 +55,7 @@
 								用户名:
 							</th>
 							<td>
-								<%
-									Cookie[] cookie = request.getCookies();
-									String mgrname = cookie[0].getValue();
-									request.setAttribute("mgrname",mgrname);
-								%>
-								<input type="text"  name="mgrName" class="text" value="${requestScope.get(mgrname)}" maxlength="20"/>
+								<input type="text"  name="mgrName" class="text" value="${cookie.mgrName.value}" maxlength="20"/>
 							</td>
 					  </tr>
 					  <tr>
