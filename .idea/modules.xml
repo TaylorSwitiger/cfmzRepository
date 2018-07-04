@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cmfz.iml" filepath="$PROJECT_DIR$/cmfz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmfz-admin/cmfz-admin.iml" filepath="$PROJECT_DIR$/cmfz-admin/cmfz-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmfz-rest/cmfz-rest.iml" filepath="$PROJECT_DIR$/cmfz-rest/cmfz-rest.iml" />
+    </modules>
+  </component>
+</project>
