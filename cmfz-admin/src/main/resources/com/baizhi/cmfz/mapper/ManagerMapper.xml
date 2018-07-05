@@ -10,8 +10,36 @@
         <result property="status" column="status"></result>
     </resultMap>
 
+    <resultMap id="menuMap" type="Menu">
+        <id property="id" column="id"></id>
+        <result property="menuName" column="menu_name"></result>
+        <result property="menuCode" column="menu_code"></result>
+        <result property="menuIcon" column="menu_icon"></result>
+        <result property="menuUrl" column="menu_url"></result>
+        <result property="menuLevel" column="menu_level"></result>
+        <collection property="childrens" ofType="Menu">
+            <id property="id" column="son_id"></id>
+            <result property="menuName" column="son_name"></result>
+            <result property="menuCode" column="son_code"></result>
+            <result property="menuIcon" column="son_icon"></result>
+            <result property="menuUrl" column="son_url"></result>
+            <result property="menuLevel" column="son_level"></result>
+            <result property="menuParentId" column="son_parent_id"></result>
+        </collection>
+    </resultMap>
+
     <select id="selectManager" resultMap="mgrMap">
         select * from manager where mgr_name = #{mgrName}
+    </select>
+
+    <select id="selectMenu" resultMap="menuMap">
+        select * from
+        (select f.id,f.menu_name,f.menu_code,f.menu_icon,
+        f.menu_url,f.menu_level,f.menu_parent_id,
+        c.id son_id,c.menu_name son_name,c.menu_code son_code,c.menu_icon son_icon,
+        c.menu_url son_url,c.menu_level son_level,c.menu_parent_id son_parent_id
+        from t_menu f left join t_menu c on f.id = c.menu_parent_id) t
+        where t.menu_parent_id is null
     </select>
 
 </mapper>
