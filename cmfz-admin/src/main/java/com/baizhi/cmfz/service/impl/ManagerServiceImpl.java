@@ -2,10 +2,15 @@ package com.baizhi.cmfz.service.impl;
 
 import com.baizhi.cmfz.dao.ManagerDao;
 import com.baizhi.cmfz.entity.Manager;
+import com.baizhi.cmfz.entity.Menu;
 import com.baizhi.cmfz.service.ManagerService;
+import com.baizhi.cmfz.util.EncryptionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Description 管理员服务层
@@ -32,10 +37,20 @@ public class ManagerServiceImpl implements ManagerService {
         mgr = managerDao.selectManager(mgrName);
 
         if (mgr != null) {
-            if (!mgr.getMgrPwd().equals(mgrPwd)) {
+            String password = EncryptionUtil.encryptionCode(mgrPwd + mgr.getSalt());
+            if (!mgr.getMgrPwd().equals(password)) {
                 mgr = null;
             };
         }
         return mgr;
+    }
+
+    public List<Menu> queryMenu(){
+
+        List<Menu> menus = new ArrayList<Menu>();
+
+        menus = managerDao.selectMenu();
+
+        return menus;
     }
 }

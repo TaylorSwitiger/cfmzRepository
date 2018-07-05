@@ -1,12 +1,14 @@
 package com.baizhi.cmfz.controller;
 
 import com.baizhi.cmfz.entity.Manager;
+import com.baizhi.cmfz.entity.Menu;
 import com.baizhi.cmfz.service.ManagerService;
 import com.baizhi.cmfz.util.CreateValidateCodeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +17,9 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -42,7 +46,17 @@ public class ManagerController {
             c1.setPath("/");
             c1.setMaxAge(60 * 60 * 24 * 7);
             response.addCookie(c1);
-            System.out.println(c1.getValue());
+
+        } else {
+            Cookie[] cookies = request.getCookies();
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("mgrName")) {
+                    cookie.setValue(null);
+                    cookie.setPath("/");
+                    cookie.setMaxAge(0);
+                    response.addCookie(cookie);
+                }
+            }
         }
 
         if (session.getAttribute("code").equals(enCode)) {
@@ -51,9 +65,19 @@ public class ManagerController {
                 return "login";
             }
             session.setAttribute("manager",mgr);
-            return "success";
+            return "main/main";
         }
         return "login";
+    }
+
+    @RequestMapping("/menu")
+    @ResponseBody
+    public List<Menu> gMenu(){
+        List<Menu> menus = managerService.queryMenu();
+       /* for (Menu menu : menus) {
+            System.out.println(menu);
+        }*/
+        return menus;
     }
 
     @RequestMapping("/getVcode")

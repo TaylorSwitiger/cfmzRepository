@@ -1,6 +1,9 @@
 package com.baizhi.cmfz.dao;
 
 import com.baizhi.cmfz.entity.Manager;
+import com.baizhi.cmfz.entity.Menu;
+
+import java.util.List;
 
 /**
  * @Description 管理员数据访问层接口
@@ -17,5 +20,14 @@ public interface ManagerDao {
      * @Exception   null
      */
     public Manager selectManager(String mgrName);
+
+    /**
+     * @Description 侧面导航菜单查询
+     * @Author      徐一鸣
+     * @Time        2018-07-05 12:13:30
+     * @Param       null
+     * @Exception   null
+     */
+    public List<Menu> selectMenu();
 
 }

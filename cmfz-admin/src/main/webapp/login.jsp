@@ -1,3 +1,4 @@
+<%@ page import="java.net.URLDecoder" %>
 <%@page pageEncoding="utf-8" language="java" contentType="text/html;utf-8" isELIgnored="false" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,7 +10,7 @@
     <meta http-equiv="description" content="this is my page">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css" type="text/css"></link>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css" type="text/css"></link>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/script/jquery.js"></script>
@@ -20,10 +21,9 @@
 
 		$(function(){
 
-            console.log(${cookie.mgrName });
-
 			//点击更换验证码：
 			$("#captchaImage").click(function(){//点击更换验证码
+
                 var ac = $("#captchaImage").prop("src");
                 $("#captchaImage").prop("src",ac+"?"+Math.random());
 			});
@@ -49,13 +49,24 @@
 					<tbody>
 						<tr>
 							<td width="190" rowspan="2" align="center" valign="bottom">
-								<img src="img/header_logo.gif" />
+								<img src="${pageContext.request.contextPath}/img/header_logo.gif" />
 							</td>
 							<th>
 								用户名:
 							</th>
 							<td>
-								<input type="text"  name="mgrName" class="text" value="${cookie.mgrName.value}" maxlength="20"/>
+								<%
+									Cookie[] cookies = request.getCookies();
+									String name = "";
+									for (Cookie cookie : cookies) {
+										if (cookie.getName().equals("mgrName")){
+										    if (cookie.getValue() != null) {
+												name = URLDecoder.decode(cookie.getValue(),"utf-8");
+											}
+										}
+									}
+								%>
+								<input type="text"  name="mgrName" class="text" value="<%=name%>" maxlength="20"/>
 							</td>
 					  </tr>
 					  <tr>

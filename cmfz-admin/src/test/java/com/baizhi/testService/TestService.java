@@ -2,6 +2,7 @@ package com.baizhi.testService;
 
 import com.baizhi.cmfz.entity.Manager;
 import com.baizhi.cmfz.service.ManagerService;
+import com.baizhi.cmfz.util.EncryptionUtil;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,7 +23,8 @@ public class TestService {
     @Test
     public void createSalt(){
 
-       // String salt
-
+       String salt = EncryptionUtil.getRandomSalt(6);
+       String password = EncryptionUtil.encryptionCode("123" + salt);
+       System.out.println(salt + "===" + password);
     }
 }

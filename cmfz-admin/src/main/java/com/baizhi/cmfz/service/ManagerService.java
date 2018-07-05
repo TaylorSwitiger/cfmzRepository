@@ -1,6 +1,9 @@
 package com.baizhi.cmfz.service;
 
 import com.baizhi.cmfz.entity.Manager;
+import com.baizhi.cmfz.entity.Menu;
+
+import java.util.List;
 
 /**
  * @Description 管理员服务层接口
@@ -17,5 +20,7 @@ public interface ManagerService {
      * @Exception   null
      */
     public Manager queryManager(String mgrName,String mgrPwd);
+
+    public List<Menu> queryMenu();
 
 }
