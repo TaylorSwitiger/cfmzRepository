@@ -2,8 +2,10 @@ package com.baizhi.cmfz.service;
 
 import com.baizhi.cmfz.entity.Manager;
 import com.baizhi.cmfz.entity.Menu;
+import com.baizhi.cmfz.entity.Picture;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Description 管理员服务层接口
@@ -22,5 +24,7 @@ public interface ManagerService {
     public Manager queryManager(String mgrName,String mgrPwd);
 
     public List<Menu> queryMenu();
+
+    public Map<String,Object> queryPicture(Integer nowPage, Integer pageSize);
 
 }

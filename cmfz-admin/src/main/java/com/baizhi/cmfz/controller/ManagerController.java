@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
@@ -78,6 +79,20 @@ public class ManagerController {
             System.out.println(menu);
         }*/
         return menus;
+    }
+
+    @RequestMapping("/findPicture")
+    @ResponseBody
+    public Map<String,Object> pictureByPage(@RequestParam("page") Integer nowPage,@RequestParam("rows")Integer pageSize){
+        System.out.println(1111);
+        Map<String,Object> map = managerService.queryPicture(nowPage,pageSize);
+       /* for (Menu menu : menus) {
+            System.out.println(menu);
+        }*/
+        for (Map.Entry<String, Object> s : map.entrySet()) {
+            System.out.println(s.getKey() + "----" + s.getValue());
+        }
+        return map;
     }
 
     @RequestMapping("/getVcode")

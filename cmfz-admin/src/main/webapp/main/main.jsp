@@ -12,7 +12,24 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/easyui-lang-zh_CN.js"></script>
 <script type="text/javascript">
 
+    function add(name,icon,url){
+
+        if($("#tt").tabs("exists",name)){
+            $("#tt").tabs("select",name);
+		} else {
+
+                $("#tt").tabs("add",{
+                title : name,
+				iconCls : icon,
+				closable : true,
+				href : url,
+			});
+		}
+
+	}
+
 	$(function(){
+
 	    $.ajax({
 			type : "post",
 			url : "${pageContext.request.contextPath}/mgr/menu.do",
@@ -31,7 +48,8 @@
                         console.log(element);
                         var childName = element.menuName;
                         var childIcon = element.menuIcon;
-                        chContent = chContent + "</br>" + "<a class=\"easyui-linkbutton\" data-options=\"iconCls : '" + childIcon + "' , plain : true \" onclick=\"examine(this)\">" + childName + "</a>";
+                        var url = "${pageContext.request.contextPath}"+element.menuUrl;
+                        chContent = chContent + "</br>" + "<a class=\"easyui-linkbutton\" data-options=\"iconCls : '" + childIcon + "' , plain : true \" onclick=\"add('" + childName + "','" + childIcon + "','" + url + "')\">" + childName + "</a>";
                     })
 
 					//console.log(chContent);
@@ -87,7 +105,7 @@
 		</div>  
     </div>   
     <div data-options="region:'center'">
-    	<div id="tt" class="easyui-tabs" data-options="fit:true,narrow:true,pill:true">   
+    	<div id="tt" class="easyui-tabs" data-options="fit:false ,narrow:true,pill:true,justified : true">
 		    <div title="主页" data-options="iconCls:'icon-neighbourhood',"  style="background-image:url(${pageContext.request.contextPath}/main/image/shouye.jpg);background-repeat: no-repeat;background-size:100% 100%;"></div>
 		</div>  
     </div>   

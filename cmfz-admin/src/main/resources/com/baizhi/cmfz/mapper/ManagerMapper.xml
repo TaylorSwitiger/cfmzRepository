@@ -28,6 +28,14 @@
         </collection>
     </resultMap>
 
+    <resultMap id="pictureMap" type="Picture">
+        <id property="pictureId" column="picture_id"></id>
+        <result property="picturePath" column="picture_path"></result>
+        <result property="pictureDate" column="picture_date"></result>
+        <result property="pictureDescription" column="picture_description"></result>
+        <result property="pictureStatus" column="picture_status"></result>
+    </resultMap>
+
     <select id="selectManager" resultMap="mgrMap">
         select * from manager where mgr_name = #{mgrName}
     </select>
@@ -40,6 +48,14 @@
         c.menu_url son_url,c.menu_level son_level,c.menu_parent_id son_parent_id
         from t_menu f left join t_menu c on f.id = c.menu_parent_id) t
         where t.menu_parent_id is null
+    </select>
+    
+    <select id="selectPictureByPage" resultMap="pictureMap">
+        select * from picture limit #{begin},#{size}
+    </select>
+
+    <select id="selectPictureCout" resultType="int">
+        select count(*) from t_menu
     </select>
 
 </mapper>
