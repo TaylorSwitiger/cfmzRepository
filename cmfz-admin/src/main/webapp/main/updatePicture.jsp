@@ -5,13 +5,19 @@
 
     $(function(){
 
-        $("#p_add1").linkbutton({
+        var item = $("#t_picture").datagrid("getSelected");
+        //console.log(item);
+        $("#p_up_son1").prop("value",item.pictureId);
+        $("#p_up_son2").prop("value",item.pictureDescription);
+        $("#p_up_son3").prop("value",item.pictureStatus);
+
+        $("#p_up1").linkbutton({
             iconCls:"icon-load",
             onClick:function(){
                 //console.log($("#p_son2").val());
                 //console.log($("#p_form"));
-                $("#p_add_form").form("submit",{
-                    url : "${pageContext.request.contextPath }/mgr/addPicture.do",
+                $("#p_up_form").form("submit",{
+                    url : "${pageContext.request.contextPath }/mgr/updatePicture.do",
                     success : function(res){
                         $.messager.show({
                             title : "我的消息",
@@ -26,7 +32,7 @@
             },
         });
 
-        $("#p_add2").linkbutton({
+        $("#p_up2").linkbutton({
             iconCls : "icon-cancel",
             text : "取消",
             onClick : function(){
@@ -45,11 +51,11 @@
 
 </script>
 <div style="text-align: center;margin-top: 40px">
-    <form id="p_add_form" method="post" enctype="multipart/form-data">
-        轮播图描述:<input id="p_add_son1" class="easyui-textbox" name="pictureDescription" data-options="label:'轮播图描述:'"/><br><br>
-        轮播图状态:<input id="p_add_son2" class="easyui-textbox" name="pictureStatus" data-options="label:'轮播图状态:'"/><br><br>
-        上传轮播图:<input id="p_add_son3" class="easyui-filebox" name="picturePath" data-options="label:'上传轮播图:'"/>
+    <form id="p_up_form" method="post" enctype="multipart/form-data">
+        轮播图 ID :<input id="p_up_son1" class="easyui-textbox" name="pictureId" data-options="label:'轮播图 ID :'" readonly/><br><br>
+        轮播图描述:<input id="p_up_son2" class="easyui-textbox" name="pictureDescription" data-options="label:'轮播图描述:'"/><br><br>
+        轮播图状态:<input id="p_up_son3" class="easyui-textbox" name="pictureStatus" data-options="label:'轮播图状态:'"/>
     </form><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="p_add1">添加</a>&nbsp;&nbsp;
-    <a id="p_add2">取消</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="p_up1">提交</a>&nbsp;&nbsp;
+    <a id="p_up2">取消</a>
 </div>

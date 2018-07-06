@@ -5,15 +5,13 @@ import com.baizhi.cmfz.entity.Manager;
 import com.baizhi.cmfz.entity.Menu;
 import com.baizhi.cmfz.entity.Picture;
 import com.baizhi.cmfz.service.ManagerService;
+import com.baizhi.cmfz.util.DateConvertUtil;
 import com.baizhi.cmfz.util.EncryptionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Description 管理员服务层
@@ -69,5 +67,29 @@ public class ManagerServiceImpl implements ManagerService {
         map.put("total",count);
 
         return map;
+    }
+
+    public Boolean modifyPicture(Picture picture) {
+        boolean flag = false;
+
+        picture.setPictureDate(DateConvertUtil.toUtilDate(DateConvertUtil.toString(new Date())));
+
+        if (managerDao.updatePicture(picture) > 0) {
+            flag = true;
+        }
+
+        return flag;
+    }
+
+    public Boolean addPicture(Picture picture) {
+        boolean flag = false;
+
+        picture.setPictureDate(DateConvertUtil.toSqlDate(picture.getPictureDate()));
+
+        if (managerDao.insertPicture(picture) > 0) {
+            flag = true;
+        }
+
+        return flag;
     }
 }

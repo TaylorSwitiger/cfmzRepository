@@ -10,6 +10,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/datagrid-detailview.js"></script>
 <script type="text/javascript">
 
     function add(name,icon,url){
@@ -17,12 +18,12 @@
         if($("#tt").tabs("exists",name)){
             $("#tt").tabs("select",name);
 		} else {
-
-                $("#tt").tabs("add",{
-                title : name,
-				iconCls : icon,
-				closable : true,
-				href : url,
+			 $("#tt").tabs("add",{
+			     title : name,
+				 iconCls : icon,
+				 closable : true,
+				 href : url,
+				 fit:true ,
 			});
 		}
 
@@ -45,7 +46,7 @@
                    // console.log(childs);
                     var chContent = '';
                     $(childs).each(function (index,element) {
-                        console.log(element);
+                       // console.log(element);
                         var childName = element.menuName;
                         var childIcon = element.menuIcon;
                         var url = "${pageContext.request.contextPath}"+element.menuUrl;
@@ -105,8 +106,8 @@
 		</div>  
     </div>   
     <div data-options="region:'center'">
-    	<div id="tt" class="easyui-tabs" data-options="fit:false ,narrow:true,pill:true,justified : true">
-		    <div title="主页" data-options="iconCls:'icon-neighbourhood',"  style="background-image:url(${pageContext.request.contextPath}/main/image/shouye.jpg);background-repeat: no-repeat;background-size:100% 100%;"></div>
+    	<div id="tt" class="easyui-tabs" data-options="fit:true ,narrow:true,pill:true,justified : false">
+		    <div title="主页" data-options="width:100,iconCls:'icon-neighbourhood',"  style="background-image:url(${pageContext.request.contextPath}/main/image/shouye.jpg);background-repeat: no-repeat;background-size:100% 100%;"></div>
 		</div>  
     </div>   
 </body> 

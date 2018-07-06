@@ -42,4 +42,8 @@ public interface ManagerDao {
     public Integer selectPictureCout();
 
     public List<Picture> selectPictureByPage(@Param("begin") Integer begin,@Param("size") Integer size);
+
+    public int updatePicture(Picture picture);
+
+    public int insertPicture(Picture picture);
 }

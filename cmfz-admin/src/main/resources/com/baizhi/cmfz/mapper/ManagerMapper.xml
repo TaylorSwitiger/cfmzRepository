@@ -55,7 +55,34 @@
     </select>
 
     <select id="selectPictureCout" resultType="int">
-        select count(*) from t_menu
+        select count(*) from picture
     </select>
+
+    <update id="updatePicture">
+        update
+            picture
+        set
+            picture_status = #{pictureStatus} ,
+            picture_date = #{pictureDate},
+            picture_description = #{pictureDescription}
+        where
+            picture_id = #{pictureId}
+    </update>
+
+    <insert id="insertPicture">
+        insert into
+            picture
+        (
+            picture_status,
+            picture_date,
+            picture_description,
+            picture_path
+        )values(
+            #{pictureStatus},
+            #{pictureDate},
+            #{pictureDescription},
+            #{picturePath}
+        )
+    </insert>
 
 </mapper>

@@ -2,26 +2,28 @@ package com.baizhi.cmfz.controller;
 
 import com.baizhi.cmfz.entity.Manager;
 import com.baizhi.cmfz.entity.Menu;
+import com.baizhi.cmfz.entity.Picture;
 import com.baizhi.cmfz.service.ManagerService;
 import com.baizhi.cmfz.util.CreateValidateCodeUtil;
+import com.baizhi.cmfz.util.DateConvertUtil;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by 阿斯加的酱油 on 2018/7/4.
@@ -84,15 +86,49 @@ public class ManagerController {
     @RequestMapping("/findPicture")
     @ResponseBody
     public Map<String,Object> pictureByPage(@RequestParam("page") Integer nowPage,@RequestParam("rows")Integer pageSize){
-        System.out.println(1111);
         Map<String,Object> map = managerService.queryPicture(nowPage,pageSize);
-       /* for (Menu menu : menus) {
-            System.out.println(menu);
-        }*/
-        for (Map.Entry<String, Object> s : map.entrySet()) {
-            System.out.println(s.getKey() + "----" + s.getValue());
-        }
         return map;
+    }
+
+    @RequestMapping("/addPicture")
+    @ResponseBody
+    public String addPicture( @RequestParam("picturePath") MultipartFile myFile, String pictureDescription,
+                               HttpServletRequest request,String pictureStatus,HttpSession session) throws IOException {
+        String message = "";
+
+        String realPath = session.getServletContext().getRealPath("");
+        realPath = realPath.substring(0,realPath.lastIndexOf("\\"));
+        String path = realPath.substring(0,realPath.lastIndexOf("\\"));
+
+        String uuidName = UUID.randomUUID().toString().replace("-","");
+        //String olName = myFile.getOriginalFilename();
+        //String suffix = olName.substring(olName.lastIndexOf("."));
+        String picturePath = "/upload/" + uuidName + ".jpg";
+        myFile.transferTo(new File(path + picturePath));
+
+        Picture picture = new Picture();
+        picture.setPictureStatus(pictureStatus);
+        picture.setPictureDescription(pictureDescription);
+        picture.setPicturePath(picturePath);
+        picture.setPictureDate(DateConvertUtil.toUtilDate(DateConvertUtil.toString(new Date())));
+        if (managerService.addPicture(picture)){
+            message = "ok";
+        } else {
+            message = "no";
+        }
+        return message;
+    }
+
+    @RequestMapping("/updatePicture")
+    @ResponseBody
+    public String modifyPicture( Picture picture) throws IOException {
+        String message = "";
+        if (managerService.modifyPicture(picture)) {
+            message = "ok";
+        } else {
+            message = "no";
+        }
+        return message;
     }
 
     @RequestMapping("/getVcode")
