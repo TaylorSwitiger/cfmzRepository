@@ -32,18 +32,5 @@ public interface ManagerDao {
      */
     public List<Menu> selectMenu();
 
-    /**
-     * @Description 轮播图数量查询
-     * @Author      徐一鸣
-     * @Time        2018-07-05 23:13:30
-     * @Param       null
-     * @Exception   null
-     */
-    public Integer selectPictureCout();
 
-    public List<Picture> selectPictureByPage(@Param("begin") Integer begin,@Param("size") Integer size);
-
-    public int updatePicture(Picture picture);
-
-    public int insertPicture(Picture picture);
 }

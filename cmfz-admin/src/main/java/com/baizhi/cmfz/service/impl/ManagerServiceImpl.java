@@ -55,41 +55,5 @@ public class ManagerServiceImpl implements ManagerService {
         return menus;
     }
 
-    public Map<String,Object> queryPicture(Integer nowPage, Integer pageSize) {
 
-        Map<String,Object> map = new HashMap<String, Object>();
-
-        Integer count = managerDao.selectPictureCout();
-
-        List<Picture> pics = managerDao.selectPictureByPage((nowPage-1)*pageSize,pageSize);
-
-        map.put("rows",pics);
-        map.put("total",count);
-
-        return map;
-    }
-
-    public Boolean modifyPicture(Picture picture) {
-        boolean flag = false;
-
-        picture.setPictureDate(DateConvertUtil.toUtilDate(DateConvertUtil.toString(new Date())));
-
-        if (managerDao.updatePicture(picture) > 0) {
-            flag = true;
-        }
-
-        return flag;
-    }
-
-    public Boolean addPicture(Picture picture) {
-        boolean flag = false;
-
-        picture.setPictureDate(DateConvertUtil.toSqlDate(picture.getPictureDate()));
-
-        if (managerDao.insertPicture(picture) > 0) {
-            flag = true;
-        }
-
-        return flag;
-    }
 }

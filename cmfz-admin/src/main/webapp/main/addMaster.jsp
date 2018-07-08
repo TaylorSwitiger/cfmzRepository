@@ -5,13 +5,13 @@
 
     $(function(){
 
-        $("#p_add1").linkbutton({
+        $("#m_add1").linkbutton({
             iconCls:"icon-load",
             onClick:function(){
                 //console.log($("#p_son2").val());
                 //console.log($("#p_form"));
-                $("#p_add_form").form("submit",{
-                    url : "${pageContext.request.contextPath }/pic/addPicture.do",
+                $("#m_add_form").form("submit",{
+                    url : "${pageContext.request.contextPath }/master/addMaster.do",
                     success : function(res){
                         $.messager.show({
                             title : "我的消息",
@@ -19,14 +19,14 @@
                             timeout : 1000,
                             showType : "silder",
                         });
-                        $("#t_picture").datagrid("reload",{});
-                        $("#grid_picture").dialog("close");
+                        $("#t_master").datagrid("reload",{});
+                        $("#grid_master").dialog("close");
                     }
                 });
             },
         });
 
-        $("#p_add2").linkbutton({
+        $("#m_add2").linkbutton({
             iconCls : "icon-cancel",
             text : "取消",
             onClick : function(){
@@ -45,11 +45,11 @@
 
 </script>
 <div style="text-align: center;margin-top: 40px">
-    <form id="p_add_form" method="post" enctype="multipart/form-data">
-        轮播图描述:<input id="p_add_son1" class="easyui-textbox" name="pictureDescription" data-options="label:'轮播图描述:'"/><br><br>
-        轮播图状态:<input id="p_add_son2" class="easyui-textbox" name="pictureStatus" data-options="label:'轮播图状态:'"/><br><br>
-        上传轮播图:<input id="p_add_son3" class="easyui-filebox" name="picturePath" data-options="label:'上传轮播图:'"/>
+    <form id="m_add_form" method="post" enctype="multipart/form-data">
+        上师法名:<input id="m_add_son1" class="easyui-textbox" name="masterName" data-options="label:'上师法名:'"/><br><br>
+        上师电话:<input id="m_add_son2" class="easyui-textbox" name="masterPhoto" data-options="label:'上师电话:'"/><br><br>
+        上师概述:<input id="m_add_son3" class="easyui-textbox" name="masterrSummary" data-options="label:'上师概述:'"/>
     </form><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="p_add1">添加</a>&nbsp;&nbsp;
-    <a id="p_add2">取消</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="m_add1">添加</a>&nbsp;&nbsp;
+    <a id="m_add2">取消</a>
 </div>

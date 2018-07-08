@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "../mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.cmfz.dao.MasterDao">
+
+    <resultMap id="masterMap" type="Master">
+        <id property="masterId" column="master_id"></id>
+        <result property="masterName" column="master_name"></result>
+        <result property="masterPhoto" column="master_photo"></result>
+        <result property="masterrSummary" column="masterr_summary"></result>
+    </resultMap>
+    
+    <select id="selectMasterByPage" resultMap="masterMap">
+        select * from master limit #{begin},#{size}
+    </select>
+
+    <select id="selectMasterCout" resultType="int">
+        select count(*) from master
+    </select>
+
+    <update id="updateMaster">
+        update
+            master
+        set
+            master_photo = #{masterPhoto} ,
+            masterr_summary = #{masterrSummary}
+        where
+            master_id = #{masterId}
+    </update>
+
+    <insert id="insertMaster">
+        insert into
+            master
+        (
+            master_name,
+            master_photo,
+            masterr_summary,
+        )values(
+            #{masterName},
+            #{masterPhoto},
+            #{masterrSummary},
+        )
+    </insert>
+
+</mapper>

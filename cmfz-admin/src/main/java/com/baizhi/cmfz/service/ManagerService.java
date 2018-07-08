@@ -25,9 +25,5 @@ public interface ManagerService {
 
     public List<Menu> queryMenu();
 
-    public Map<String,Object> queryPicture(Integer nowPage, Integer pageSize);
 
-    public Boolean modifyPicture(Picture picture);
-
-    public Boolean addPicture(Picture picture);
 }

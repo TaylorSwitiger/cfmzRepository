@@ -83,53 +83,7 @@ public class ManagerController {
         return menus;
     }
 
-    @RequestMapping("/findPicture")
-    @ResponseBody
-    public Map<String,Object> pictureByPage(@RequestParam("page") Integer nowPage,@RequestParam("rows")Integer pageSize){
-        Map<String,Object> map = managerService.queryPicture(nowPage,pageSize);
-        return map;
-    }
 
-    @RequestMapping("/addPicture")
-    @ResponseBody
-    public String addPicture( @RequestParam("picturePath") MultipartFile myFile, String pictureDescription,
-                               HttpServletRequest request,String pictureStatus,HttpSession session) throws IOException {
-        String message = "";
-
-        String realPath = session.getServletContext().getRealPath("");
-        realPath = realPath.substring(0,realPath.lastIndexOf("\\"));
-        String path = realPath.substring(0,realPath.lastIndexOf("\\"));
-
-        String uuidName = UUID.randomUUID().toString().replace("-","");
-        //String olName = myFile.getOriginalFilename();
-        //String suffix = olName.substring(olName.lastIndexOf("."));
-        String picturePath = "/upload/" + uuidName + ".jpg";
-        myFile.transferTo(new File(path + picturePath));
-
-        Picture picture = new Picture();
-        picture.setPictureStatus(pictureStatus);
-        picture.setPictureDescription(pictureDescription);
-        picture.setPicturePath(picturePath);
-        picture.setPictureDate(DateConvertUtil.toUtilDate(DateConvertUtil.toString(new Date())));
-        if (managerService.addPicture(picture)){
-            message = "ok";
-        } else {
-            message = "no";
-        }
-        return message;
-    }
-
-    @RequestMapping("/updatePicture")
-    @ResponseBody
-    public String modifyPicture( Picture picture) throws IOException {
-        String message = "";
-        if (managerService.modifyPicture(picture)) {
-            message = "ok";
-        } else {
-            message = "no";
-        }
-        return message;
-    }
 
     @RequestMapping("/getVcode")
     public void validateCode(HttpSession session, HttpServletResponse response) throws IOException {

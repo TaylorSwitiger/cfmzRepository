@@ -4,40 +4,39 @@
 <script type="text/javascript">
     
     $(function () {
-        $("#t_picture").datagrid({
+        $("#t_master").datagrid({
             height : 400,
-            url:"${pageContext.request.contextPath }/pic/findPicture.do",
+            url:"${pageContext.request.contextPath }/master/findMaster.do",
             columns:[[
-                 {title : "标识编号",field : "pictureId" , sortable:true,width:30},
-                 {title : "文件名",field : "picturePath",width:30},
-                 {title : "描述信息",field : "pictureDescription",width:30},
-                 {title : "轮播图状态",field : "pictureStatus",width:30,
-                     formatter: function(value,row,index){
+                 {title : "上师编号",field : "masterId" , sortable:true,width:30},
+                 {title : "上师法名",field : "masterName",width:30},
+                 {title : "上师电话",field : "masterPhoto",width:30},
+                 {title : "上师概述",field : "masterrSummary",width:30,
+                     /*formatter: function(value,row,index){
                          if (row.pictureStatus == "轮播"){
                              return "<span style='color: red'>" + row.pictureStatus + "<span>";
                          } else {
                              return row.pictureStatus;
                          }
-                     }
+                     }*/
                  },
-                 {title : "更新时间",field : "pictureDate",width:30},
-                 {title : "操作",field : "operate",width:30,
+                 {title : "操作",field : "m_operate",width:30,
                      formatter: function(value,row,index){
-                         return "<a name='opera' class='easyui-linkbutton' >修改 <a>";
+                         return "<a name='m_opera' class='easyui-linkbutton' >修改 <a>";
                      },
                  },
               ]],
             onLoadSuccess : function (data) {
-                $("a[name='opera']").linkbutton({
+                $("a[name='m_opera']").linkbutton({
                     text:'修改',
                     plain:true,
                     iconCls:'icon-edit',
                     onClick:function(){
                         //展示一个对话框窗口
-                        $("#grid_picture").dialog({
+                        $("#grid_master").dialog({
                             width : 525,
                             height : 300,
-                            title : "修改图片",
+                            title : "更新上师",
                             toolbar : [{
                                 iconCls : "icon-help",
                                 text : "帮助",
@@ -45,7 +44,7 @@
                                     alert("帮助");
                                 },
                             }],
-                            href : "${pageContext.request.contextPath }/main/updatePicture.jsp",
+                            href : "${pageContext.request.contextPath }/main/updateMaster.jsp",
                             model : true,
                             shadow : true ,
 
@@ -57,10 +56,10 @@
             fitColumns:true ,
             pageList:[4,7,10],
             pageSize:4,
-            toolbar:"#tool_picture",
+            toolbar:"#tool_master",
             singleSelect:true, //设置只能选择一行
             iconCls:"icon-ok",
-            view:detailview,
+            /*view:detailview,
             detailFormatter: function(rowIndex, rowData){
                 return '<table><tr>' +
                 '<td rowspan=2 style="border:0"><img src="${pageContext.request.contextPath}' + rowData.picturePath + '" style="height:50px;"></td>' +
@@ -69,17 +68,17 @@
                 '<p>Status: ' + rowData.pictureStatus + '</p>' +
                 '</td>' +
                 '</tr></table>';
-            }
+            }*/
         });
 
 
-        $("#p_b1").linkbutton({
+        $("#m_b1").linkbutton({
             onClick:function(){
                 //展示一个对话框窗口
-                $("#grid_picture").dialog({
+                $("#grid_master").dialog({
                     width : 525,
                     height : 300,
-                    title : "增加图片",
+                    title : "增加上师",
                     toolbar : [{
                         iconCls : "icon-help",
                         text : "帮助",
@@ -87,7 +86,7 @@
                             alert("帮助");
                         },
                     }],
-                    href : "${pageContext.request.contextPath }/main/addPicture.jsp",
+                    href : "${pageContext.request.contextPath }/main/addMaster.jsp",
                     model : true,
                     shadow : true ,
 
@@ -97,15 +96,27 @@
        // $(".datagrid-body table").css("color","yellow");
 
     });
-    
+
+    function search_master(value,name){
+        console.log(value + name);
+        /*$("#t_master").datagrid("load",{
+            key:value,
+            category:name,
+        });*/
+    }
     
 </script>
 
-    <table id="t_picture"></table>
+    <table id="t_master"></table>
 
-        <div id="tool_picture">
-            <a id="p_b1" class="easyui-linkbutton" data-options="iconCls:'icon-add',text:'新增轮播图'"></a>
-            <a id="p_b2" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true,text:'帮助'"></a>
+        <div id="tool_master">
+            <a id="m_b1" class="easyui-linkbutton" data-options="iconCls:'icon-add',text:'新增上师'"></a>
+            <a id="m_b2" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true,text:'帮助'"></a>
+            <input id="ss" class="easyui-searchbox" style="width:300px" data-options="searcher:search_master,prompt:'Please Input Value',menu:'#mm'"></input>
+            <div id="mm" style="width:120px">
+                <div data-options="name:'id',iconCls:'icon-ok'">ID</div>
+                <div data-options="name:'name',iconCls:'icon-ok'">Name</div>
+            </div>
         </div>
 
-    <div id="grid_picture"></div>
+    <div id="grid_master"></div>

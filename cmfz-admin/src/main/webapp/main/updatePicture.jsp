@@ -17,7 +17,7 @@
                 //console.log($("#p_son2").val());
                 //console.log($("#p_form"));
                 $("#p_up_form").form("submit",{
-                    url : "${pageContext.request.contextPath }/mgr/updatePicture.do",
+                    url : "${pageContext.request.contextPath }/pic/updatePicture.do",
                     success : function(res){
                         $.messager.show({
                             title : "我的消息",
