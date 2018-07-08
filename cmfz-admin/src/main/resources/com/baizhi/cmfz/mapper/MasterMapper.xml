@@ -13,8 +13,20 @@
         select * from master limit #{begin},#{size}
     </select>
 
+    <select id="selectMaster" resultMap="masterMap">
+        select * from master
+    </select>
+
+    <select id="selectMasterByKey" resultMap="masterMap">
+        select p.* from (select * from master where ${category} like '%${key}%') p limit #{begin},#{size}
+    </select>
+
     <select id="selectMasterCout" resultType="int">
         select count(*) from master
+    </select>
+
+    <select id="selectMasterCoutByKey" resultType="int">
+        select count(*) from master where ${category} like '%${key}%'
     </select>
 
     <update id="updateMaster">
@@ -33,12 +45,26 @@
         (
             master_name,
             master_photo,
-            masterr_summary,
-        )values(
+            masterr_summary
+        ) values(
             #{masterName},
             #{masterPhoto},
-            #{masterrSummary},
+            #{masterrSummary}
         )
+    </insert>
+
+    <insert id="insertMasterBatch" parameterType="java.util.List">
+        insert into
+            master
+        values
+            <foreach collection="masters" separator="," item="master">
+                (
+                    #{master.masterId},
+                    #{master.masterName},
+                    #{master.masterPhoto},
+                    #{master.masterrSummary}
+                )
+            </foreach>
     </insert>
 
 </mapper>

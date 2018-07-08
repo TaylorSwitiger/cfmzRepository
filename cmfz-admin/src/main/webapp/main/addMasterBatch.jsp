@@ -5,20 +5,13 @@
 
     $(function(){
 
-        var item = $("#t_master").datagrid("getSelected");
-        //console.log(item);
-        $("#m_up_son1").prop("value",item.masterId);
-        $("#m_up_son2").prop("value",item.masterName);
-        $("#m_up_son3").prop("value",item.masterPhoto);
-        $("#m_up_son4").prop("value",item.masterrSummary);
-
-        $("#m_up1").linkbutton({
+        $("#m_b_add1").linkbutton({
             iconCls:"icon-load",
             onClick:function(){
                 //console.log($("#p_son2").val());
                 //console.log($("#p_form"));
-                $("#m_up_form").form("submit",{
-                    url : "${pageContext.request.contextPath }/master/updateMaster.do",
+                $("#m_b_add_form").form("submit",{
+                    url : "${pageContext.request.contextPath }/master/addMasterBatch.do",
                     success : function(res){
                         $.messager.show({
                             title : "我的消息",
@@ -33,7 +26,7 @@
             },
         });
 
-        $("#m_up2").linkbutton({
+        $("#m_b_add2").linkbutton({
             iconCls : "icon-cancel",
             text : "取消",
             onClick : function(){
@@ -44,7 +37,7 @@
                     timeout : 1000,
                     showType : "silder",
                 });
-                $("#grid_master").dialog("close");
+                $("#grid_picture").dialog("close");
             }
         })
 
@@ -52,12 +45,9 @@
 
 </script>
 <div style="text-align: center;margin-top: 40px">
-    <form id="m_up_form" method="post" enctype="multipart/form-data">
-        上师编号:<input id="m_up_son1" class="easyui-textbox" name="masterId" data-options="label:'上师编号:'" readonly/><br><br>
-        上师法名:<input id="m_up_son2" class="easyui-textbox" name="masterName" data-options="label:'上师法名:'" readonly/><br><br>
-        上师电话:<input id="m_up_son3" class="easyui-textbox" name="masterPhoto" data-options="label:'上师电话:'"/><br><br>
-        上师概述:<input id="m_up_son4" class="easyui-textbox" name="masterrSummary" data-options="label:'上师概述:'"/>
+    <form id="m_b_add_form" method="post" enctype="multipart/form-data">
+        选择Excel:<input id="m_b_add_son1" class="easyui-filebox" name="masterFile" data-options="label:'选择Excel:'"/>
     </form><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="m_up1">提交</a>&nbsp;&nbsp;
-    <a id="m_up2">取消</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="m_b_add1">添加</a>&nbsp;&nbsp;
+    <a id="m_b_add2">取消</a>
 </div>

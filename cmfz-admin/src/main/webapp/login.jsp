@@ -43,7 +43,7 @@
 <body>
 
 		<div class="login">
-			<form id="loginForm" action="/cmfz/admin/mgr/login.do" method="post" accept-charset="utf-8">
+			<form id="loginForm" action="${pageContext.request.contextPath}/mgr/login.do" method="post" accept-charset="utf-8">
 				
 				<table>
 					<tbody>
@@ -83,7 +83,7 @@
 							<th>验证码:</th>
 							<td>
 								<input type="text" id="enCode" name="enCode" class="text captcha" maxlength="4" autocomplete="off"/>
-								<img id="captchaImage" class="captchaImage" src="/cmfz/admin/mgr/getVcode.do" title="点击更换验证码"/>
+								<img id="captchaImage" class="captchaImage" src="${pageContext.request.contextPath}/mgr/getVcode.do" title="点击更换验证码"/>
 							</td>
 						</tr>					
 					<tr>
