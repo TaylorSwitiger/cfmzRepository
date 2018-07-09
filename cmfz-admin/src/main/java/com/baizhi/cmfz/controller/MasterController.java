@@ -121,4 +121,14 @@ public class MasterController {
         out.close();
     }
 
+    @RequestMapping("/allMaster")
+    @ResponseBody
+    public List<Master> allMaster(HttpServletResponse response){
+        String message = "";
+
+        List<Master> masters = masterService.queryMaster();
+
+        return masters;
+    }
+
 }

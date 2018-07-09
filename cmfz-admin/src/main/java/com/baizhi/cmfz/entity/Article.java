@@ -1,5 +1,7 @@
 package com.baizhi.cmfz.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.util.Date;
 
 public class Article {
@@ -11,6 +13,7 @@ public class Article {
 
     private String introduction;
 
+    @JSONField(format = "yyyy-MM-dd")
     private Date publishDate;
 
     private String mainPic;
@@ -61,5 +64,17 @@ public class Article {
 
     public void setMainPic(String mainPic) {
         this.mainPic = mainPic == null ? null : mainPic.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Article{" +
+                "articleId='" + articleId + '\'' +
+                ", articleName='" + articleName + '\'' +
+                ", masterId='" + masterId + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", publishDate=" + publishDate +
+                ", mainPic='" + mainPic + '\'' +
+                '}';
     }
 }
