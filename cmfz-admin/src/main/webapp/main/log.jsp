@@ -4,36 +4,31 @@
 <script type="text/javascript">
 
     $(function () {
-        $("#t_article").datagrid({
+        $("#t_log").datagrid({
             height : 400,
-            url:"${pageContext.request.contextPath }/article/findArticle.do",
+            url:"${pageContext.request.contextPath }/log/findLog.do",
             columns:[[
-                {title : "文章编号",field : "articleId" , sortable:true,width:30},
-                {title : "文章名称",field : "articleName",width:30},
-                {title : "所属上师",field : "masterId",width:30},
-                {title : "创建时间",field : "publishDate",width:30,
-                    /*formatter: function(value,row,index){
-                     if (row.pictureStatus == "轮播"){
-                     return "<span style='color: red'>" + row.pictureStatus + "<span>";
-                     } else {
-                     return row.pictureStatus;
-                     }
-                     }*/
-                },
-                {title : "操作",field : "art_operate",width:30,
+                {title : "日志编号",field : "logId" , sortable:true,width:30},
+                {title : "操作人员",field : "operateManager",width:30},
+                {title : "操作时间",field : "operateTime",width:30},
+                {title : "操作对象",field : "resource",width:30,},
+                {title : "操作动作",field : "action",width:30,},
+                {title : "操作信息",field : "message",width:30,},
+                {title : "操作结果",field : "result",width:30,},
+                {title : "操作",field : "log_operate",width:30,
                     formatter: function(value,row,index){
-                        return "<a name='art_opera' class='easyui-linkbutton' >修改 <a>";
+                        return "<a name='log_opera' class='easyui-linkbutton' >修改 <a>";
                     },
                 },
             ]],
             onLoadSuccess : function (data) {
-                $("a[name='art_opera']").linkbutton({
+                $("a[name='log_opera']").linkbutton({
                     text:'修改',
                     plain:true,
                     iconCls:'icon-edit',
                     onClick:function(){
                         //展示一个对话框窗口
-                        $("#grid_article").dialog({
+                        $("#grid_log").dialog({
                             width : 525,
                             height : 300,
                             title : "更新文章",
@@ -64,6 +59,6 @@
 
 </script>
 
-<table id="t_article"></table>
+<table id="t_log"></table>
 
-<div id="grid_article"></div>
+<div id="grid_log"></div>

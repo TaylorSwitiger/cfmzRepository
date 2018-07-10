@@ -37,9 +37,9 @@ public class ArticleController {
     public Map<String,Object> selectArticle(@RequestParam("page") Integer nowPage, @RequestParam("rows") Integer pageSize){
         Map<String,Object> map = articleService.queryArticle(nowPage,pageSize);
 
-        for (Map.Entry<String, Object> s : map.entrySet()) {
+       /* for (Map.Entry<String, Object> s : map.entrySet()) {
             System.out.println(s.getKey() + "===" + s.getValue());
-        }
+        }*/
 
         return map;
     }
