@@ -1,5 +1,6 @@
 <%@page language="java" isELIgnored="false" contentType="text/html; utf-8"
         pageEncoding="utf-8" import="java.util.*" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 
 <script type="text/javascript">
     
@@ -23,7 +24,7 @@
                  {title : "更新时间",field : "pictureDate",width:30},
                  {title : "操作",field : "operate",width:30,
                      formatter: function(value,row,index){
-                         return "<a name='opera' class='easyui-linkbutton' >修改 <a>";
+                         return "<shiro:hasPermission name="picture:modify">" + "<a name='opera' class='easyui-linkbutton' >修改 <a>" + "</shiro:hasPermission>";
                      },
                  },
               ]],
@@ -104,7 +105,7 @@
     <table id="t_picture"></table>
 
         <div id="tool_picture">
-            <a id="p_b1" class="easyui-linkbutton" data-options="iconCls:'icon-add',text:'新增轮播图'"></a>
+            <shiro:hasPermission name="picture:add"><a id="p_b1" class="easyui-linkbutton" data-options="iconCls:'icon-add',text:'新增轮播图'"></a></shiro:hasPermission>
             <a id="p_b2" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true,text:'帮助'"></a>
         </div>
 

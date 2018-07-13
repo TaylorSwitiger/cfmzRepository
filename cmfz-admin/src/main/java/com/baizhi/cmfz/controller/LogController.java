@@ -23,11 +23,6 @@ public class LogController {
     @ResponseBody
     public Map<String,Object> selectLog(@RequestParam("page") Integer nowPage, @RequestParam("rows") Integer pageSize){
         Map<String,Object> map = logService.queryLog(nowPage,pageSize);
-
-        for (Map.Entry<String, Object> s : map.entrySet()) {
-            System.out.println(s.getKey() + "===" + s.getValue());
-        }
-
         return map;
     }
 

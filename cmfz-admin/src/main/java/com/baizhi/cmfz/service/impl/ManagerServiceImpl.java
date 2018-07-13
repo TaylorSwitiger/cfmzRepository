@@ -1,9 +1,7 @@
 package com.baizhi.cmfz.service.impl;
 
 import com.baizhi.cmfz.dao.ManagerDao;
-import com.baizhi.cmfz.entity.Manager;
-import com.baizhi.cmfz.entity.Menu;
-import com.baizhi.cmfz.entity.Picture;
+import com.baizhi.cmfz.entity.*;
 import com.baizhi.cmfz.service.ManagerService;
 import com.baizhi.cmfz.util.DateConvertUtil;
 import com.baizhi.cmfz.util.EncryptionUtil;
@@ -55,5 +53,11 @@ public class ManagerServiceImpl implements ManagerService {
         return menus;
     }
 
+    public List<SysRole> queryRoleByManagerName(String managerName) {
+        return managerDao.selectRoleByManagerName(managerName);
+    }
 
+    public List<SysPermission> queryPermissionByManagerName(String managerName) {
+        return managerDao.selectPermissionByManagerName(managerName);
+    }
 }

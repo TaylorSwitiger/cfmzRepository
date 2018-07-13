@@ -1,8 +1,6 @@
 package com.baizhi.cmfz.service;
 
-import com.baizhi.cmfz.entity.Manager;
-import com.baizhi.cmfz.entity.Menu;
-import com.baizhi.cmfz.entity.Picture;
+import com.baizhi.cmfz.entity.*;
 
 import java.util.List;
 import java.util.Map;
@@ -25,5 +23,7 @@ public interface ManagerService {
 
     public List<Menu> queryMenu();
 
+    public List<SysRole> queryRoleByManagerName(String managerName);
 
+    public List<SysPermission> queryPermissionByManagerName(String managerName);
 }

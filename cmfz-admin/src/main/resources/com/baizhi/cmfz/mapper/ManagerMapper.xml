@@ -42,4 +42,64 @@
         where t.menu_parent_id is null
     </select>
 
+    <select id="selectRoleByManagerName" resultType="SysRole">
+        select
+            id,
+            role_name roleName,
+            role_tag roleTag
+        from
+            sys_role
+        where
+            id in(
+                select
+                    role_id
+                from
+                    sys_manager_role
+                where
+                    manager_id =(
+                        select
+                            mgr_id
+                        from
+                            manager
+                        where
+                            mgr_name = #{managerName}
+                    )
+            )
+    </select>
+
+    <select id="selectPermissionByManagerName" resultType="SysPermission">
+        select
+            id id,
+            resource_name resourceName,
+            resource_tag resourceTag,
+            resource_url resourceUrl,
+            permission_tag permissionTag
+        from
+            sys_permission
+        where
+            id in(
+                select
+                    permission_id
+                from
+                    sys_role_permission
+                where
+                    role_id in(
+                        select
+                            role_id
+                        from
+                            sys_manager_role
+                        where
+                            manager_id =(
+                                select
+                                    mgr_id
+                                from
+                                    manager
+                                where
+                                    mgr_name = #{managerName}
+                            )
+                    )
+            )
+    </select>
+
+
 </mapper>

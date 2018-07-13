@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--shiro过滤器工厂对象  负责权限的校验 处理请求的bean-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"></property>
+        <!--登录页的url地址-->
+        <property name="loginUrl" value="/login.jsp"></property>
+        <property name="successUrl" value="/success.jsp"></property>
+        <property name="unauthorizedUrl" value="/unauthorized.jsp"></property>
+        <!--定义过滤器链的拦截规则-->
+        <property name="filterChainDefinitions">
+            <value>
+                <!--url   过滤器-->
+
+                /main/**=user
+                /pic/findPicture.do=roles[admin]
+                /**=anon
+
+                <!--
+                    anon:匿名过滤器，不认证就可以访问资源（一般用于静态资源和非核心功能）
+                    authc:表单认证过滤器，必须认证通过才可以访问资源，否则跳转至认证页面
+                -->
+            </value>
+        </property>
+    </bean>
+
+    <!--初始化web环境下的安全管理器-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realms" >
+            <list>
+                <ref bean="myRealm"></ref>
+            </list>
+        </property>
+        <!--实现记住我功能-->
+        <property name="rememberMeManager" ref="rememberMeManager"></property>
+
+        <!--缓存管理器-->
+        <!--<property name="cacheManager" ref="ehCacheManager"></property>-->
+    </bean>
+    <!--缓存框架  一般适用于本地缓存-->
+    <!--<bean id="ehCacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+
+    </bean>-->
+    <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="simpleCookie"></property>
+    </bean>
+    <bean id="simpleCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <!--cookie名称-->
+        <property name="name" value="rm"></property>
+        <property name="maxAge" value="6048800"></property>
+        <property name="path" value="/"></property>
+    </bean>
+
+    <bean id="myRealm" class="com.baizhi.cmfz.util.MyRealm">
+        <property name="credentialsMatcher" ref="credentialsMatcher"></property>
+    </bean>
+    <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+        <property name="hashAlgorithmName" value="md5"></property>
+        <property name="hashIterations" value="1024" ></property>
+    </bean>
+
+</beans>

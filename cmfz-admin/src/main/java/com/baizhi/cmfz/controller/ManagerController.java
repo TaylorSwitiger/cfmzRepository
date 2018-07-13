@@ -7,9 +7,14 @@ import com.baizhi.cmfz.service.ManagerService;
 import com.baizhi.cmfz.util.CreateValidateCodeUtil;
 import com.baizhi.cmfz.util.DateConvertUtil;
 import org.apache.ibatis.annotations.Param;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -36,41 +41,54 @@ public class ManagerController {
     private ManagerService managerService;
 
     @RequestMapping("/login")
-    public String managerLogin(Manager manager,String enCode,boolean check, Model model, HttpServletResponse response,
-                               HttpServletRequest request , HttpSession session) throws UnsupportedEncodingException {
+    public String managerLogin(Manager manager,String enCode,boolean check,
+                               HttpServletResponse response, HttpServletRequest request ,
+                               HttpSession session, boolean rememberMe) throws UnsupportedEncodingException {
         //System.out.println(manager.getMgrName() + "------" + manager.getMgrPwd() + "----" + check);
 
         /*for (Cookie cookie : request.getCookies()) {
             System.out.println(cookie.getValue());
         }*/
-        if (check) {
-            Cookie c1 = new Cookie("mgrName", URLEncoder.encode(manager.getMgrName(),"utf-8"));
 
-            c1.setPath("/");
-            c1.setMaxAge(60 * 60 * 24 * 7);
-            response.addCookie(c1);
-
-        } else {
-            Cookie[] cookies = request.getCookies();
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("mgrName")) {
-                    cookie.setValue(null);
-                    cookie.setPath("/");
-                    cookie.setMaxAge(0);
-                    response.addCookie(cookie);
-                }
-            }
-        }
 
         if (session.getAttribute("code").equals(enCode)) {
-            Manager mgr = managerService.queryManager(manager.getMgrName(),manager.getMgrPwd());
-            if (mgr == null){
-                return "login";
+
+            if (check) {
+                Cookie c1 = new Cookie("mgrName", URLEncoder.encode(manager.getMgrName(),"utf-8"));
+
+                c1.setPath("/");
+                c1.setMaxAge(60 * 60 * 24 * 7);
+                response.addCookie(c1);
+
+            } else {
+                Cookie[] cookies = request.getCookies();
+                for (Cookie cookie : cookies) {
+                    if (cookie.getName().equals("mgrName")) {
+                        cookie.setValue(null);
+                        cookie.setPath("/");
+                        cookie.setMaxAge(0);
+                        response.addCookie(cookie);
+                    }
+                }
             }
-            session.setAttribute("manager",mgr);
-            return "main/main";
+
+            Subject subject = SecurityUtils.getSubject();
+
+            try {
+                subject.login(new UsernamePasswordToken(manager.getMgrName(),manager.getMgrPwd(),rememberMe));
+                return "main/main";
+            } catch (UnknownAccountException e) {
+                e.printStackTrace();
+                return "redirect:/login.jsp";
+            } catch (IncorrectCredentialsException e) {
+                e.printStackTrace();
+                return "redirect:/login.jsp";
+            } catch (AuthenticationException e) {
+                e.printStackTrace();
+                return "redirect:/login.jsp";
+            }
         }
-        return "login";
+        return "redirect:/login.jsp";
     }
 
     @RequestMapping("/menu")

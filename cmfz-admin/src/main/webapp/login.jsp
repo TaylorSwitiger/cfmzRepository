@@ -96,6 +96,7 @@
 						<td>
 							<label>
 								<input type="checkbox" id="isRememberUsername" name="check" value="true"/> 记住用户名
+								<input type="checkbox" id="isRememberMeSevenDay" name="rememberMe" value="true"/> 七天免登陆
 							</label>
 						</td>
 					</tr>

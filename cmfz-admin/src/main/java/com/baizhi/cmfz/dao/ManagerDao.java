@@ -1,8 +1,6 @@
 package com.baizhi.cmfz.dao;
 
-import com.baizhi.cmfz.entity.Manager;
-import com.baizhi.cmfz.entity.Menu;
-import com.baizhi.cmfz.entity.Picture;
+import com.baizhi.cmfz.entity.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -33,4 +31,7 @@ public interface ManagerDao {
     public List<Menu> selectMenu();
 
 
+    public List<SysRole> selectRoleByManagerName(String managerName);
+
+    public List<SysPermission> selectPermissionByManagerName(String managerName);
 }
