@@ -1,6 +1,5 @@
-package com.baizhi.cmfz.AOP;
+package com.baizhi.cmfz.aop;
 
-import com.baizhi.cmfz.dao.LogDao;
 import com.baizhi.cmfz.entity.Log;
 import com.baizhi.cmfz.entity.Manager;
 import com.baizhi.cmfz.service.LogService;
@@ -66,7 +65,7 @@ public class MyAdvice {
      */
     @Around("pc()")
     public void around(ProceedingJoinPoint pjp) throws Throwable { //连接点
-        System.out.println("----环绕前----");
+        //System.out.println("----环绕前----");
         Log log = new Log();
         HttpSession s = (HttpSession) RequestContextHolder
                 .currentRequestAttributes()
@@ -108,6 +107,6 @@ public class MyAdvice {
 
         logService.increaseLog(log);
 
-        System.out.println("----环绕后----");
+        //System.out.println("----环绕后----");
     }
 }

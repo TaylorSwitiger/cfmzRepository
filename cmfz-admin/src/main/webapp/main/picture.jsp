@@ -64,7 +64,7 @@
             view:detailview,
             detailFormatter: function(rowIndex, rowData){
                 return '<table><tr>' +
-                '<td rowspan=2 style="border:0"><img src="${pageContext.request.contextPath}' + rowData.picturePath + '" style="height:50px;"></td>' +
+                '<td rowspan=2 style="border:0"><img src="' + rowData.picturePath + '" style="height:50px;"></td>' +
                 '<td style="border:0">' +
                 '<p>Attribute: ' + rowData.pictureDescription + '</p>' +
                 '<p>Status: ' + rowData.pictureStatus + '</p>' +

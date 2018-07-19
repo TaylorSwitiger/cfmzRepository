@@ -38,7 +38,7 @@
     <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
 
     <!--注册额外功能类-->
-    <bean id="myAdvice" class="com.baizhi.cmfz.AOP.MyAdvice"></bean>
+    <bean id="myAdvice" class="com.baizhi.cmfz.aop.MyAdvice"></bean>
 
     <!--使用aspectj风格aop-->
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>

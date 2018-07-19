@@ -53,7 +53,7 @@ public class PictureServiceImpl implements PictureService {
         boolean flag = false;
 
         picture.setPictureDate(DateConvertUtil.toSqlDate(picture.getPictureDate()));
-
+        //System.out.println(picture);
         if (pictureDao.insertPicture(picture) > 0) {
             flag = true;
         }

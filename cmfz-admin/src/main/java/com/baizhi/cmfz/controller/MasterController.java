@@ -9,6 +9,24 @@ import com.baizhi.cmfz.entity.Picture;
 import com.baizhi.cmfz.service.MasterService;
 import com.baizhi.cmfz.service.PictureService;
 import com.baizhi.cmfz.util.DateConvertUtil;
+import com.baizhi.cmfz.util.IndexMaster;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.IntField;
+import org.apache.lucene.document.TextField;
+import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.highlight.*;
+import org.apache.lucene.store.FSDirectory;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,6 +41,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.*;
 
 /**
@@ -37,13 +56,13 @@ public class MasterController {
 
     @RequestMapping("/findMaster")
     @ResponseBody
-    public Map<String,Object> masterByPage(@RequestParam("page") Integer nowPage, @RequestParam("rows")Integer pageSize,String key,String category){
+    public Map<String,Object> masterByPage(@RequestParam("page") Integer nowPage, @RequestParam("rows")Integer pageSize,String key,String category) throws ParseException, InvalidTokenOffsetsException, IOException {
         Map<String,Object> map = new HashMap<String, Object>();
 
         if (key == null || key.equals("")) {
             map = masterService.queryMaster(nowPage,pageSize);
         } else {
-            map = masterService.queryMaster(nowPage,pageSize,key,category);
+            map = IndexMaster.indexMaster(nowPage,pageSize,key,category);
         }
         return map;
     }
@@ -52,12 +71,38 @@ public class MasterController {
     @ResponseBody
     public String addMaster(Master master) throws IOException {
         String message = "";
+        //System.out.println(123123);
+       masterService.addMaster(master);
 
-        if (masterService.addMaster(master)){
+            /**
+             * 更新索引库
+             */
+            List<Master> masters = masterService.queryMaster();
+
+            /*for (Master master1 : masters) {
+                System.out.println(master1);
+            }*/
+
+            FSDirectory fsDirectory = FSDirectory.open(Paths.get("G:\\index\\02"));
+
+            IndexWriter indexWriter = new IndexWriter(fsDirectory, new IndexWriterConfig(new StandardAnalyzer()));
+
+            for (int i = 0;i < masters.size() ;i++) {
+                Document document= new Document();
+                // Store.YES | NO 代表是不是要将域值保存到索引库的数据存储区
+                document.add(new IntField("id",masters.get(i).getMasterId(), Field.Store.YES)); // 指定数据的编号
+                document.add(new TextField("name",masters.get(i).getMasterName(), Field.Store.YES));
+                document.add(new TextField("phone",masters.get(i).getMasterPhoto(), Field.Store.YES));
+                document.add(new TextField("summary",masters.get(i).getMasterrSummary(), Field.Store.YES));
+
+                indexWriter.addDocument(document);
+            }
+            indexWriter.flush();
+
+            indexWriter.commit();
+
             message = "ok";
-        } else {
-            message = "no";
-        }
+
         return message;
     }
 
@@ -131,4 +176,12 @@ public class MasterController {
         return masters;
     }
 
+
+    /*@RequestMapping("/indexMaster")
+    @ResponseBody
+    public Map<String,Object> indexMaster(@RequestParam("page") Integer nowPage, @RequestParam("rows")Integer pageSize,String keyword) throws IOException, ParseException, InvalidTokenOffsetsException {
+
+
+
+    }*/
 }

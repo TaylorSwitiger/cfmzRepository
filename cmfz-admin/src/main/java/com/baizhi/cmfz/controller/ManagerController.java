@@ -76,6 +76,7 @@ public class ManagerController {
 
             try {
                 subject.login(new UsernamePasswordToken(manager.getMgrName(),manager.getMgrPwd(),rememberMe));
+                session.setAttribute("manager",manager);
                 return "main/main";
             } catch (UnknownAccountException e) {
                 e.printStackTrace();
