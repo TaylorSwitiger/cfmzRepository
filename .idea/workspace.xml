@@ -1,0 +1,2296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03d2eae0-6dda-4f84-abae-2e1f0904d0fd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/img/henu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/img/timg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/upload/06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/TestExcelController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/cancelManager.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/lbpic.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/manager.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/setasManager.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateManager.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/shouye.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/cmfz_admin_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/cmfz_admin_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/cmfz_rest_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/cmfz_rest_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/cmfz-admin.iml" afterPath="$PROJECT_DIR$/cmfz-admin/cmfz-admin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-mvc.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-shiro.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-shiro.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.html" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addArticle.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addArticle.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addMaster.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addMaster.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addMasterBatch.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addMasterBatch.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addPicture.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addPicture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/article.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/article.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/log.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/log.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/main.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/master.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/master.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/picture.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/picture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateMaster.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateMaster.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updatePicture.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updatePicture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/userSpread.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/userSpread.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/success.jsp" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/success.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-admin/src/test/java/com/baizhi/testService/TestService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/test/java/com/baizhi/testService/TestService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz-rest/cmfz-rest.iml" afterPath="$PROJECT_DIR$/cmfz-rest/cmfz-rest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmfz.iml" afterPath="$PROJECT_DIR$/cmfz.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/aop/MyAdvice.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/aop/MyAdvice.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/ArticleController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ArticleController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/LogController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/LogController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/ManagerController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ManagerController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/MasterController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/MasterController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/PictureController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/PictureController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/controller/RichTextController.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/RichTextController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/dao/ArticleDao.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ArticleDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/dao/LogDao.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/LogDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/dao/ManagerDao.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ManagerDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/dao/MasterDao.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/MasterDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/dao/PictureDao.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/PictureDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Album.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Album.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Article.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Article.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Audio.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Audio.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Counter.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Counter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Log.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Log.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Manager.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Manager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Master.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Master.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Menu.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Menu.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Picture.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Picture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/RichTextResult.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/RichTextResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/Sort.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Sort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/SysPermission.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysPermission.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/SysRole.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysRole.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/entity/User.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/ArticleService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/ArticleService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/LogService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/LogService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/ManagerService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/ManagerService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/MasterService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/MasterService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/PictureService.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/PictureService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/impl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/ArticleServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/impl/LogServiceImpl.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/LogServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/impl/ManagerServiceImpl.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/ManagerServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/impl/MasterServiceImpl.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/MasterServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/service/impl/PictureServiceImpl.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/PictureServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/util/CreateValidateCodeUtil.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/CreateValidateCodeUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/util/DateConvertUtil.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/DateConvertUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/util/EncryptionUtil.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/EncryptionUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/util/IndexMaster.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/IndexMaster.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/baizhi/cmfz/util/MyRealm.java" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/MyRealm.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/baizhi/cmfz/mapper/ArticleMapper.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/ArticleMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/baizhi/cmfz/mapper/LogMapper.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/LogMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/baizhi/cmfz/mapper/ManagerMapper.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/ManagerMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/baizhi/cmfz/mapper/MasterMapper.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/MasterMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/baizhi/cmfz/mapper/PictureMapper.xml" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/PictureMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/01.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/02.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/03.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/04.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/05.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/06.jpg" afterPath="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/6.jpg" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/cmfz-admin/target/" />
+    <ignored path="$PROJECT_DIR$/cmfz-rest/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ManagerMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/ManagerMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/PictureMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/PictureDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/PictureServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="40" />
+              <folding>
+                <element signature="method#queryPicture#0;class#PictureServiceImpl#0" expanded="false" />
+                <element signature="e#1098#1099#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PictureService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/PictureService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ManagerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+              <folding>
+                <element signature="method#managerLogin#0;class#ManagerController#0" expanded="false" />
+                <element signature="method#validateCode#0;class#ManagerController#0" expanded="false" />
+                <element signature="method#changePassword#0;class#ManagerController#0" expanded="false" />
+                <element signature="method#addManager#0;class#ManagerController#0" expanded="false" />
+                <element signature="method#findManagerByPage#0;class#ManagerController#0" expanded="false" />
+                <element signature="e#5873#5889#0" expanded="true" />
+                <element signature="method#cancelManager#0;class#ManagerController#0" expanded="false" />
+                <element signature="method#setasManager#0;class#ManagerController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ManagerDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+              <folding>
+                <element signature="e#1341#1577#0#HTML" expanded="false" />
+                <element signature="e#1845#4163#0#HTML" expanded="false" />
+                <element signature="e#3493#4157#0#HTML" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="picture.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/picture.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="65" column="68" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cancel</find>
+      <find>grid_manager</find>
+      <find>addPicture</find>
+      <find>FastDFS</find>
+      <find />
+      <find>fds</find>
+      <find>f</find>
+      <find>fd</find>
+      <find>fdfs_</find>
+      <find>fdfs_cli</find>
+      <find>fdfs_client</find>
+      <find>upload</find>
+      <find>/upload</find>
+      <find>loopDiv</find>
+      <find>pic</find>
+      <find>main_father</find>
+      <find>changePic</find>
+      <find>add</find>
+      <find>pr</find>
+      <find>porp</find>
+      <find>por</find>
+      <find>pro</find>
+      <find>p</find>
+      <find>main_img</find>
+      <find>jsImg</find>
+      <find>message</find>
+      <find>prop</find>
+      <find>data</find>
+      <find>data.</find>
+      <find>popup</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>社员</replace>
+      <replace>海报</replace>
+      <replace>t_manager</replace>
+      <replace>mgr_b1</replace>
+      <replace>mgr_</replace>
+      <replace>mgr</replace>
+      <replace>setas</replace>
+      <replace>manager</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\webapp\themes\IconsExtension</dir>
+      <dir>G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\target</dir>
+      <dir>G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\webapp\main</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cmfz-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/success.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.html" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/test/java/com/baizhi/testService/TestService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/EncryptionUtil.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/LogService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/MasterService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/LogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/IndexMaster.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/MyRealm.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Album.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Log.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/RichTextResult.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysPermission.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysRole.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ArticleDao.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/LogDao.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/article.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updatePicture.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/picture.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addPicture.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Master.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addMaster.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateMaster.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateManager.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/aop/MyAdvice.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/MasterController.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/MasterDao.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addArticle.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/master.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/MasterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ManagerDao.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/ManagerService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/ManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-shiro.xml" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/setasManager.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/cancelManager.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/manager.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/PictureController.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/lbpic.jsp" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/ManagerMapper.xml" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/PictureMapper.xml" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/PictureDao.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/PictureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/PictureService.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/main.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/Maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="F:\Maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cmfz-admin Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cmfz-admin Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="cmfz" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmfz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.7" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmfz-admin/src/main/webapp/main" />
+    <property name="SearchEverywhereHistoryKey" value="ehcache&#9;FILE&#9;file://G:/study/BeforeWork/idea-workspace/cmfz/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_5_0.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.baizhi.testService" />
+      <recent name="com.baizhi.cmfz.AOP" />
+      <recent name="com.baizhi.cmfz.controller" />
+      <recent name="com.baizhi.cmfz.service.impl" />
+      <recent name="com.baizhi.cmfz.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\webapp\main" />
+      <recent name="G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\webapp\img" />
+      <recent name="G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\webapp\upload" />
+      <recent name="G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\resources" />
+      <recent name="G:\study\BeforeWork\idea-workspace\cmfz\cmfz-admin\src\main\resources\com\baizhi\cmfz\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat8">
+    <configuration default="false" name="TestService.createSalt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.baizhi.cmfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cmfz-admin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.baizhi.testService" />
+      <option name="MAIN_CLASS_NAME" value="com.baizhi.testService.TestService" />
+      <option name="METHOD_NAME" value="createSalt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AspectJTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.baizhi.cmfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.baizhi.testService.AspectJTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cmfz-admin" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestD.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.baizhi.cmfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cmfz-admin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.baizhi.testService" />
+      <option name="MAIN_CLASS_NAME" value="com.baizhi.testService.TestD" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestMasterApplication.createIndexMaster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.baizhi.cmfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cmfz-admin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.baizhi.cmfz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.baizhi.cmfz.test.TestMasterApplication" />
+      <option name="METHOD_NAME" value="createIndexMaster" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="cmfz" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="TestService.TestServiceone" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.baizhi.cmfz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="cmfz-admin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.baizhi.testService" />
+      <option name="MAIN_CLASS_NAME" value="com.baizhi.testService.TestService" />
+      <option name="METHOD_NAME" value="TestServiceone" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files (x86)\Java\jdk1.8.0_161\jre">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8099/cmfz-admin/login.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="%IDEA_RUN:TOMCAT_HOME%/webapps/upload">
+          <settings>
+            <option name="CONTEXT_PATH" value="/cmfz-admin/upload" />
+          </settings>
+        </file>
+        <artifact name="cmfz-admin:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/cmfz-admin" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_cmfz_3" />
+        <option name="HTTP_PORT" value="8099" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64227" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="cmfz-admin:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestService.TestServiceone" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat8" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestService.createSalt" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AspectJTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestD.test1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestMasterApplication.createIndexMaster" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestService.createSalt" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestMasterApplication.createIndexMaster" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestD.test1" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AspectJTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\阿斯加的酱油\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03d2eae0-6dda-4f84-abae-2e1f0904d0fd" name="Default" comment="" />
+      <created>1530676196257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530676196257</updated>
+      <workItem from="1530676199341" duration="435000" />
+      <workItem from="1530676674341" duration="4413000" />
+      <workItem from="1530684701115" duration="23860000" />
+      <workItem from="1530751925827" duration="20277000" />
+      <workItem from="1530794900623" duration="16017000" />
+      <workItem from="1530839041092" duration="25637000" />
+      <workItem from="1530870785223" duration="965000" />
+      <workItem from="1531013473386" duration="26790000" />
+      <workItem from="1531098945307" duration="15052000" />
+      <workItem from="1531138675109" duration="6871000" />
+      <workItem from="1531183737816" duration="9544000" />
+      <workItem from="1531357855975" duration="1707000" />
+      <workItem from="1531379734747" duration="16000" />
+      <workItem from="1531379948554" duration="52000" />
+      <workItem from="1531394947236" duration="136000" />
+      <workItem from="1531395174847" duration="29000" />
+      <workItem from="1531459208375" duration="690000" />
+      <workItem from="1531466403468" duration="14393000" />
+      <workItem from="1531906088798" duration="13576000" />
+      <workItem from="1531921025521" duration="1593000" />
+      <workItem from="1531961027673" duration="5062000" />
+      <workItem from="1531979114270" duration="2849000" />
+      <workItem from="1531993871939" duration="2430000" />
+      <workItem from="1532055793810" duration="1404000" />
+      <workItem from="1532226942726" duration="594000" />
+      <workItem from="1533115798800" duration="747000" />
+      <workItem from="1533134840049" duration="256000" />
+      <workItem from="1534381370731" duration="8354000" />
+      <workItem from="1535100463416" duration="4608000" />
+      <workItem from="1535184848119" duration="2800000" />
+      <workItem from="1535542547410" duration="1385000" />
+      <workItem from="1539612243664" duration="1323000" />
+      <workItem from="1540120642367" duration="4112000" />
+      <workItem from="1540223769592" duration="1638000" />
+      <workItem from="1555899970468" duration="32975000" />
+      <workItem from="1556251538917" duration="8072000" />
+      <workItem from="1556272209928" duration="35315000" />
+      <workItem from="1556352214900" duration="10824000" />
+    </task>
+    <task id="LOCAL-00001" summary="持明法洲">
+      <created>1530712198349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530712198349</updated>
+    </task>
+    <task id="LOCAL-00002" summary="持明法洲Day1">
+      <created>1530713430947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530713430947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="持明法洲Day2 0.5">
+      <created>1530779990936</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530779990936</updated>
+    </task>
+    <task id="LOCAL-00004" summary="持明法洲Day2">
+      <created>1530810682883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1530810682883</updated>
+    </task>
+    <task id="LOCAL-00005" summary="持明法洲轮播图管理OK">
+      <created>1530867347486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530867347486</updated>
+    </task>
+    <task id="LOCAL-00006" summary="持明法洲Day3 0.1">
+      <created>1531019527711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531019527711</updated>
+    </task>
+    <task id="LOCAL-00007" summary="持明法洲Day3">
+      <created>1531064303469</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531064303469</updated>
+    </task>
+    <task id="LOCAL-00008" summary="持明法洲Day4">
+      <created>1531148275430</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531148275430</updated>
+    </task>
+    <task id="LOCAL-00009" summary="持明法洲Day4">
+      <created>1531233864950</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531233864950</updated>
+    </task>
+    <task id="LOCAL-00010" summary="持明法洲 shiro">
+      <created>1531484131724</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531484131724</updated>
+    </task>
+    <task id="LOCAL-00011" summary="持明法洲 + Lucene + fastDFS">
+      <created>1531995859321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531995859321</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestService_TestServiceone - 2018.07.10 at 13h 22m 12s.xml">
+      <configuration name="TestService.TestServiceone" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_TestServiceone - 2018.07.10 at 13h 23m 55s.xml">
+      <configuration name="TestService.TestServiceone" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2018.07.05 at 09h 12m 28s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 08m 22s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 13m 09s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 13m 16s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 28m 16s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 28m 48s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 29m 16s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestService_createSalt - 2019.04.26 at 13h 29m 36s.xml">
+      <configuration name="TestService.createSalt" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="306801000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66923076" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28441754" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38202247" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28441754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53932583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22087745" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="持明法洲" />
+    <MESSAGE value="持明法洲Day1" />
+    <MESSAGE value="持明法洲Day2 0.5" />
+    <MESSAGE value="持明法洲Day2" />
+    <MESSAGE value="持明法洲轮播图管理OK" />
+    <MESSAGE value="持明法洲Day3 0.1" />
+    <MESSAGE value="持明法洲Day3" />
+    <MESSAGE value="持明法洲Day4" />
+    <MESSAGE value="持明法洲 shiro" />
+    <MESSAGE value="持明法洲 + Lucene + fastDFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="持明法洲 + Lucene + fastDFS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="41" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="token" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-tx/4.0.5.RELEASE/spring-tx-4.0.5.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/aop/MyAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="101" column="42" lean-forward="false" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-tx/4.0.5.RELEASE/spring-tx-4.0.5.RELEASE.jar!/org/springframework/dao/NonTransientDataAccessException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-tx/4.0.5.RELEASE/spring-tx-4.0.5.RELEASE.jar!/org/springframework/dao/DataAccessException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-core/4.0.5.RELEASE/spring-core-4.0.5.RELEASE.jar!/org/springframework/core/NestedRuntimeException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-tx/4.0.5.RELEASE/spring-tx-4.0.5.RELEASE.jar!/org/springframework/dao/DataIntegrityViolationException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-tx/4.0.5.RELEASE/spring-tx-4.0.5.RELEASE.jar!/org/springframework/dao/DuplicateKeyException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/util/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/LogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/MasterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="15" column="104" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-aop/4.0.5.RELEASE/spring-aop-4.0.5.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/MasterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/entity/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/MasterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2129">
+          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="method#modifyMaster#0;class#MasterController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/applicationContext-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/MasterMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Maven/repository/org/springframework/spring-web/4.0.5.RELEASE/spring-web-4.0.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/master.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/setasManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateMaster.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/cancelManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="method#selectArticle#0;class#ArticleController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/image/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/addArticle.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="80" lean-forward="false" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/RichTextController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/Editor.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/PictureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="56" column="56" lean-forward="true" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/updateManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/lbpic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="111" column="36" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/ManagerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/ManagerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/MasterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/resources/com/xuyiming/cmfz/mapper/PictureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/dao/PictureDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/impl/PictureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="method#queryPicture#0;class#PictureServiceImpl#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/service/PictureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/java/com/xuyiming/cmfz/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+          <folding>
+            <element signature="method#managerLogin#0;class#ManagerController#0" expanded="false" />
+            <element signature="method#validateCode#0;class#ManagerController#0" expanded="false" />
+            <element signature="method#changePassword#0;class#ManagerController#0" expanded="false" />
+            <element signature="method#addManager#0;class#ManagerController#0" expanded="false" />
+            <element signature="method#findManagerByPage#0;class#ManagerController#0" expanded="false" />
+            <element signature="e#5873#5889#0" expanded="true" />
+            <element signature="method#cancelManager#0;class#ManagerController#0" expanded="false" />
+            <element signature="method#setasManager#0;class#ManagerController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/picture.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="65" column="68" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmfz-admin/src/main/webapp/main/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="e#1341#1577#0#HTML" expanded="false" />
+            <element signature="e#1845#4163#0#HTML" expanded="false" />
+            <element signature="e#3493#4157#0#HTML" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>cmfz-admin:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>cmfz-rest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.github.virtuald:curvesapi:1.04</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

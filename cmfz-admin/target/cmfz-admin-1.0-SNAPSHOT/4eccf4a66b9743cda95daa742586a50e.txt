@@ -1,0 +1,11 @@
+分页的封装练习  √
+
+Struts配置文件优化 √
+
+Struts拦截器  √
+
+Struts Cookie获取、拦截 √
+
+MyBatisUtil巩固 √
+
+JS控制注册登录输入  √

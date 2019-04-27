@@ -1,10 +1,9 @@
 package com.baizhi.testService;
 
-import com.baizhi.cmfz.entity.Article;
-import com.baizhi.cmfz.entity.Manager;
-import com.baizhi.cmfz.service.ArticleService;
-import com.baizhi.cmfz.service.ManagerService;
-import com.baizhi.cmfz.util.EncryptionUtil;
+import com.xuyiming.cmfz.entity.Article;
+import com.xuyiming.cmfz.service.ArticleService;
+import com.xuyiming.cmfz.util.EncryptionUtil;
+import org.apache.shiro.crypto.hash.SimpleHash;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -39,5 +38,8 @@ public class TestService {
        String salt = EncryptionUtil.getRandomSalt(6);
        String password = EncryptionUtil.encryptionCode("123" + salt);
        System.out.println(salt + "===" + password);
+       String pwd = new SimpleHash("MD5", "123456", "xym", 1024).toHex();
+
+        System.out.println(pwd.equals("6cf78017c8fb1e771f83403013eff58e"));
     }
 }
