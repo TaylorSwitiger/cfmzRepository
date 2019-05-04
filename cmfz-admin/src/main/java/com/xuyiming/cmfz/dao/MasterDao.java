@@ -81,6 +81,6 @@ public interface MasterDao {
      */
     public List<Master> selectMaster();
 
-    public void deleteMaster(String master);
+    public int deleteMaster(@Param("masterId") String masterId);
 
 }

@@ -142,14 +142,15 @@ public class ManagerController {
      * @return
      */
     @RequestMapping("/addManager")
+    @ResponseBody
     public String addManager(Manager manager) {
         manager.setMgrId(UUID.randomUUID().toString().replace("-",""));
         manager.setSalt(EncryptionUtil.getRandomSalt());
         manager.setMgrPwd(EncryptionUtil.getAlforithmPassword(manager.getMgrPwd(), manager.getSalt()));
         if (!managerService.addManager(manager)) {
-            return null;
+            return "ok";
         }
-        return "redirect:/login.jsp";
+        return "no";
     }
 
     @RequestMapping("/findManager")

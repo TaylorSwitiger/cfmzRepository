@@ -15,7 +15,7 @@
                  },
                  {title : "操作",field : "m_operate",width:30,
                      formatter: function(value,row,index){
-                         return "<a name='m_opera' class='easyui-linkbutton' >修改 <a>";
+                         return "<a name='m_opera' class='easyui-linkbutton' >修改 <a>" + "<a name='m_remove' class='easyui-linkbutton' >删除 <a>";
                      },
                  },
               ]],
@@ -41,6 +41,27 @@
                             model : true,
                             shadow : true ,
 
+                        });
+                    }
+                });
+                $("a[name='m_remove']").linkbutton({
+                    text:'删除',
+                    plain:true,
+                    iconCls:'icon-edit',
+                    onClick:function(){
+                        $.ajax({
+                            type : "post",
+                            url : "${pageContext.request.contextPath }/master/removeMaster.do",
+                            data: $("#t_master").datagrid("getSelected"),
+                            success : function(message){
+                                $.messager.show({
+                                    title : "我的消息",
+                                    msg : message +",窗口将自动关闭",
+                                    timeout : 1000,
+                                    showType : "silder",
+                                });
+                                $("#t_master").datagrid("reload",{});
+                            }
                         });
                     }
                 });

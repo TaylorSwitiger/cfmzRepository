@@ -173,11 +173,13 @@ public class MasterController {
     }
 
 
-    /*@RequestMapping("/indexMaster")
+    @RequestMapping("/removeMaster")
     @ResponseBody
-    public Map<String,Object> indexMaster(@RequestParam("page") Integer nowPage, @RequestParam("rows")Integer pageSize,String keyword) throws IOException, ParseException, InvalidTokenOffsetsException {
-
-
-
-    }*/
+    public String removeMaster(String masterId) throws IOException, ParseException, InvalidTokenOffsetsException {
+        if (masterService.removeMaster(masterId)) {
+            return "ok";
+        } else {
+            return "no";
+        }
+    }
 }

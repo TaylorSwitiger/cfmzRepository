@@ -40,4 +40,8 @@ public interface ManagerService {
     public Map<String,Object> queryManagerByKey(Integer nowPage, Integer pageSize,String key,String categroy);
 
     public boolean changeManagerRole(Integer roleId, String managerId);
+
+    public boolean removeManagerRole(String managerId);
+
+    public boolean removeManager(String mgrId);
 }

@@ -58,6 +58,12 @@ public interface ManagerDao {
 
     public int insertManagerRole(String managerId);
 
+    public int deleteManagerRole(String managerId);
+
+    public int deleteManager(String mgrId);
+
+    public int isExist(String mgrId);
+
     public int updateManagerRole(@Param("roleId") Integer roleId, @Param("managerId") String managerId);
 
     public List<Manager> selectManagerByPage(@Param("begin") Integer begin, @Param("size") Integer size);

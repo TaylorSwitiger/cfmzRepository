@@ -20,4 +20,6 @@ public interface MasterService {
     public Boolean addMaster(Master master) throws Exception;
 
     public Boolean addMasterBatch(List<Master> master);
+
+    public Boolean removeMaster(String masterId);
 }

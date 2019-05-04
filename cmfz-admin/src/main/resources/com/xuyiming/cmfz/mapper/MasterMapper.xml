@@ -53,6 +53,10 @@
         )
     </insert>
 
+    <delete id="deleteMaster" parameterType="String">
+        delete from master where master_id = #{masterId}
+    </delete>
+
     <insert id="insertMasterBatch" parameterType="java.util.List">
         insert into
             master

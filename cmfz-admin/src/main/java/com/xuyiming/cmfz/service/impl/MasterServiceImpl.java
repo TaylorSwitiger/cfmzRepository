@@ -102,4 +102,16 @@ public class MasterServiceImpl implements MasterService {
 
         return flag;
     }
+
+    @Override
+    public Boolean removeMaster(String masterId) {
+        if (masterDao.deleteMaster(masterId) > 0) {
+            if (managerDao.isExist(masterId) > 0) {
+                return managerDao.deleteManager(masterId) > 0;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
 }

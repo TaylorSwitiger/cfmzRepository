@@ -50,6 +50,10 @@
         )
     </insert>
 
+    <delete id="deleteManagerRole" parameterType="String">
+        delete from sys_manager_role where manager_id = #{managerId}
+    </delete>
+
     <update id="updateManagerRole">
         update
             sys_manager_role
@@ -147,6 +151,14 @@
             #{salt}
         )
     </insert>
+
+    <delete id="deleteManager" parameterType="String">
+        delete from manager where mgr_id = #{mgrId}
+    </delete>
+    
+    <select id="isExist" resultType="int">
+        select count(*) from manager where mgr_id = #{mgrId}
+    </select>
 
     <update id="updateManager" parameterType="Manager">
         update

@@ -115,4 +115,14 @@ public class ManagerServiceImpl implements ManagerService {
         }
         return false;
     }
+
+    @Override
+    public boolean removeManagerRole(String managerId) {
+        return managerDao.deleteManagerRole(managerId) > 0;
+    }
+
+    @Override
+    public boolean removeManager(String mgrId) {
+        return (managerDao.deleteManager(mgrId) > 0) && (managerDao.deleteManagerRole(mgrId) > 0);
+    }
 }
